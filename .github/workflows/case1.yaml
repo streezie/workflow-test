@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest #environment where job will run on
     steps: #tasks to be carried out to complete the job
       - name: Get code #name of the task to be carry out 
-        uses: actions/checkout # Used only when using an action
+        uses: actions/checkout@v3 # Used only when using an action
       - name: Install dependencies
         run: npm ci
       - name: lint
